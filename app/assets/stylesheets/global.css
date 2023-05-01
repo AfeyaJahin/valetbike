@@ -2,29 +2,55 @@
 /*        Global Definitions        */
 /************************************/
 
+#div1 {
+  background-color: #FFEEE4;
+  width: 100vw;
+  margin: 1em 0;
+  margin-top: 46px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--title-font);
+}
+
 * {
   margin: 0;
   padding: 0;
   z-index: 1;
 }
 
-html {
-  height: 100%;
+img {
+  max-width: 100%;
+  max-height:100%;
+  float: right;
 }
 
+
+
+
+
 body {
-  font-size: 12pt;
-  -webkit-text-size-adjust:none;
-  -moz-text-size-adjust:none;
-  -ms-text-size-adjust:none;
-  -webkit-text-size-adjust:100%;
-  -moz-text-size-adjust:100%;
-  -ms-text-size-adjust:100%;
-  background-color: white;
-  min-height: 400px;
-  margin-bottom: 100px;
-  clear: both;
+  height: 100%;
+  margin:0;
+  padding:0;
+  width: 100vw;
 }
+
+footer {
+  position: absolute;
+    bottom: -17%;
+    width: 100vw;
+    height: 80px;
+    text-align: center;
+    padding: 10px;
+    left:0;
+    background-color: #FFEEE4;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+  }
 
 
 #site-container{
@@ -33,7 +59,7 @@ body {
   height: 100%;
   height: auto !important;
   min-height: 100%;
-  font-family: var(--body-font);
+  
   font-weight: 400;
   color: var(--black-color);
   background: var(--white-color);
@@ -63,7 +89,7 @@ h3 {
   color: black;
   text-align: left;
   font-family: inter;
-  font-size: 14px;
+  font-size: 20px;
   font-weight: bold;
 }
 
@@ -71,7 +97,18 @@ p {
   font-family: inter;
   font-size: 12px;
   color: black;
+  text-align: left;
+
 }
+
+div
+{
+    text-align: center;
+    padding: 10px;
+    display: flex;   
+    flex-direction: column;
+}
+
 
 button{
   background-color: #8C1627;
@@ -80,6 +117,8 @@ button{
   color: white;
   margin: auto;
 }
+
+
 
 #map {
   position: absolute;

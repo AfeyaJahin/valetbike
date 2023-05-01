@@ -1,5 +1,5 @@
 
-<div class="lg:flex shadow-lg" padding=8>
+<div class="lg:flex shadow-lg" padding=8 width=50%>
   <img class="object-cover w-full h-24 border m-2 lg:w-24" src="<%= asset_path('station.png') %>" alt="">
   <% docked_bikes_id = String(station[:id]) + "_docked" %>
   <% docked_bikes_value = 'Available Bikes: ' + station.docked_bikes.count.to_s %>

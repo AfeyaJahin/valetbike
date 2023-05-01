@@ -1,192 +1,61 @@
-<!DOCTYPE html>
-<html>
-  <head>
-  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
 
 
-  <style>
-
-  #div1 {
-    background-color: #FFEEE4;
-    width: 100vw;
-    margin: 1em 0;
-    height: 300px;
-    margin-top: 46px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  div
-  {
-      text-align: center;
-      padding: 10px;
-      display: flex;   
-      flex-direction: column;
-  }
-
-  .lower_section {
-      background-color: #FFEEE4;
-      width:800px;   
-      margin: 1em 0;
-      height: 100px; 
-      display:grid;
-      grid-template-columns: 3fr 1fr;
-      border-radius: 12px;
-  }
-
-  .lower_section_p{
-    text-align: left;
-    margin-top:10px;
-  }
-
-  .lower_section_button{
-    background-color: #8C1627;
-    padding: 7px 20px;
-    border-radius: 6px;
-    color: white;
-    margin: auto;
-  }
-
-  h2 {
-    color: #8C1627;
-    text-align: left;
-    font-family: inter;
-    font-size: 20px;
-    font-weight: 600;
-    width: 100vw;
-    padding-left:50px;
-  }
-  h3 {
-    color: black;
-    text-align: left;
-    font-family: inter;
-    font-size: 14px;
-    font-weight: bold;
-  }
-  p {
-    font-family: inter;
-    font-size: 12px;
-    color: black;
-  }
-
-  section2 {
-          float: left;
-          width: 500px;
-          height: 200px;
-          margin: 10px;
-        }
-
-  .round {
-          width: 15%;
-          border-radius: 15px;
-          border: 1px #FFEEE4 solid;
-          padding: 5px 5px 5px 25px;
-          top: 0;
-          left: 0;
-          z-index: 5;
-  }
-
-  .grid1{
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      grid-template-rows: 150px;
-      grid-gap: 10px;
-      padding : 20px;
-      text-align: left;
-  }
-  .faq_icon{
-      height: 36px;
-      width: 36px;
-      background-color: #8C1627 ;
-      border-radius: 100% ;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      color: white;
-      margin-bottom: 15px;
-  }
-
-  .faq_p{
-      text-align: left;
-  }
-  .faq_h2{
-    text-align: left
-  }
-  .header_p{
-    font-size: 20px;
-  }
-
-  .is-hidden { 
-    display: none; 
-  }
-
-  </style>
-  </head>
-
-  <section id ="div1">
-      <h1 line-height = "2em" >Ask Us Anything </h1>
-      <br>
-      <p class="header_p">Have any questions? We are here to assist you. </p>
-      <br>
-      <input type="search" id="searchbox" onkeyup="search_faq()" type="text"
-      name="search" style="color:grey" placeholder="Search here" ;
-  outline= "0" border-radius = "25px" class = "round" oninput="liveSearch()"  >
-      <br>
-  </section>
+<section id ="div1">
+    <h1>Frequently Asked Questions</h1>
+    <p class="header_p">Have any questions? We are here to assist you. </p>
+    <br>
+    <input type="search" id="searchbox" onkeyup="search_faq()" type="text" name="search" style="color:grey" placeholder="Search here" ; outline= "0" border-radius = "25px" class = "round" oninput="liveSearch()"  >
+    <br>
+</section>
 
   <body>
 
-  <h2 class="faq_h2">Frequently Asked Questions</h2>
+  <div class="container">
 
-
-  <div class="grid1">
-
-  <div class="cards">
-  <div class="faq_icon">
-  <i class="ri-price-tag-3-line"></i>
-  </div>
-  <h3>Find a Bike</h3>
-  <p class="faq_p">Visit the Locations page to to view all stations with available bikes near you. Click the Rent A bike button to view the rental page.</p>
+  <div class="box">
+    <div class="icon">
+      <i class="ri-price-tag-3-line"></i>
+    </div>
+    <h3>Find a Bike</h3>
+    <p>Visit the Locations page to to view all stations with available bikes near you. Click the Rent A bike button to view the rental page.</p>
   </div>
 
 
-  <div class="cards">
-  <div class="faq_icon">
-  <i class="ri-riding-line"></i>
+  <div class="box">
+  <div class="icon">
+    <i class="ri-riding-line"></i>
   </div>
   <h3>What should I do if my payment fails?</h3>
-  <p class="faq_p">If your payment fails, you can use the (COD) payment option, if available on that order. If your payment is debited from your account after a payment failure, it will be credited back within 7-10 days.</p>
+  <p>If your payment fails, you can use the (COD) payment option, if available on that order. If your payment is debited from your account after a payment failure, it will be credited back within 7-10 days.</p>
   </div>
 
 
-  <div class="cards">
-  <div class="faq_icon">
+  <div class="box">
+  <div class="icon">
   <i class="ri-bank-card-line"></i>
   </div>
   <h3>What if there are no bikes available at a station?</h3>
   <p class="faq_p">Check the live maps — available on the kiosk screen, on the website or on the mobile app. Maps will display the real-time availability of the bikes at all docking stations.</p>
   </div>
 
-  <div class="cards">
-  <div class="faq_icon">
+  <div class="box">
+  <div class="icon">
   <i class="ri-forbid-line"></i>
   </div>
   <h3>Where can I ride my bike?</h3>
-  <p class="faq_p">You can ride anywhere as long as you remain within the system area. You can check the designated area on the website map. Please note that leaving the system area can result in penalties incurred on your account.</p>
+  <p>You can ride anywhere as long as you remain within the system area. You can check the designated area on the website map. Please note that leaving the system area can result in penalties incurred on your account.</p>
   </div>
 
-  <div class="cards">
-  <div class="faq_icon">
+  <div class="box">
+  <div class="icon">
   <i class="ri-truck-line"></i>
   </div>
   <h3>How long can I rent a bike</h3>
-  <p class="faq_p">Each individual ride lasts for 2 hours. If you choose to keep the bike longer than that, you will be charged a fee of $0.15 for each additional minute thereafter. The bike must be returned after 24 hours else, it will be considered stolen and a fee of $2,000 will be charged to your credit card.</p>
+  <p>Each individual ride lasts for 2 hours. If you choose to keep the bike longer than that, you will be charged a fee of $0.15 for each additional minute thereafter. The bike must be returned after 24 hours else, it will be considered stolen and a fee of $2,000 will be charged to your credit card.</p>
   </div>
 
-  <div class="cards">
-  <div class="faq_icon">
+  <div class="box">
+  <div class="icon">
   <i class="ri-money-dollar-circle-line"></i>
   </div>
   <h3>Do I have to return it to the same station?</h3>
@@ -204,7 +73,7 @@
   </div>
 
   <div>
-  <button class="lower_section_button">Get in touch</button>
+  <button>Get in touch</button>
   </div>
 
   </div>
@@ -233,4 +102,3 @@
 
   </script>
   </body>
-</html>

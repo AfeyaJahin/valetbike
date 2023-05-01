@@ -1,112 +1,65 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title> How ValetBike Works </title>
-    <style>
-      .container {
-        width: 90%;
-        height: auto;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        position: relative;
-      }
 
-      .box {
-        width: 400px;
-        height: 200px;
-        margin: 10px;
-      }
-      button{
-        padding: 15px 32px;
-        text-align: center;
-        display: inline-block;
-        font-size: 16px;
-        margin: 4px 2px;
-        cursor: pointer;
-        color: white;
-        background-color: #8C1627;
-      }
-      .button {
-        padding: 15px 32px;
-        text-align: center;
-        display: inline-block;
-        font-size: 16px;
-        margin: 4px 2px;
-        cursor: pointer;
-        color: white;
-        background-color: #8C1627;
-        text-decoration: none;
-      }
-      h3 {
-        font-size: 20px;
-        font-weight: bold;
-      }
-      .questions {
-        border: 0px solid transparent;
-        border-radius: 15px;
-        background-color: #FFEEE4;
-        width: 90% ;
-        text-align: left;
-        padding: 15px;
-        margin-bottom: -10%%;
-      }
-      .questions button {
-        float: right;
-      }
-      .questions .statements {
-        float: left;
-      } 
-    </style>
-  </head>
+<head>
+  <title> How ValetBike Works </title>
+</head>
 
-  <body> 
-    <h1> How ValetBike Works </h1>
-    <div class = "container">
-      <div class = "box">
-        <%= image_tag("one.png") %>
-        <h3> Find a Bike </h3>
-        <p> Visit the Locations page to view all stations with available bikes near you. Click the Rent A bike button to view the rental page. </p>
-      </div>
+<section id ="div1">
+    <h1> How ValetBike Works</h1>
+</section>
 
-      <div class = "box">
-        <%= image_tag("two.png") %>
-        <h3><b> Make Payment </b></h3>
-        <p> Enter your payment details to pay for your rental. Once your payment is validated, a code will propagate on your screen. </p>
-      </div>
 
-      <div class = "box">
-        <%= image_tag("three.png") %>
-        <h3> Unlock a Bike </h3>
-        <p> Visit the nearest bike station and enter your rental code on a bike’s dashboard to unlock the bike from the dock </p>
-      </div>
-
-      <div class = "box">
-        <%= image_tag("four.png") %>
-        <h3> Enjoy Your Ride </h3>
-        <p> Upon successfully unlocking the bike, you are now free to ride it for the next two hours. Exceeding the time will incur additional costs. </p>
-      </div>
-
-      <div class = "box">
-        <%= image_tag("five.png") %>
-        <h3> Find Available Docks </h3>
-        <p> At the end of your ride, visit the locations page to view live updates on stations with available docks near you. Visit the nearest station to dock the bike. </p>
-      </div>
-
-      <div class = "box">
-        <%= image_tag("six.png") %>
-        <h3> Return the Bike </h3>
-        <p> Click Return Bike on your rental page to obtain a return token. Enter the token in the dock’s dashboard to secure the bike. Repeat the process for your next trip! </p>
-      </div>
+<body> 
+  <div class = "container">
+    <div class = "box">
+      <div class="icon"> 1 </div>
+      <h3> Find a Bike </h3>
+      <p> Visit the Locations page to view all stations with available bikes near you. Click the Rent A bike button to view the rental page. </p>
     </div>
-  
-    <div class = "questions">
-      <div class = "statements">
-      <h3> Have questions about our service? </h3>
-      <p> Still have questions about our service? Visit our Frequently Asked Questions page </p>
-      </div>
-      <button><a href="faq">FAQs</a></button>
+
+    <div class = "box">
+        <div class="icon"> 2 </div>
+      <h3><b> Make Payment </b></h3>
+      <p> Enter your payment details to pay for your rental. Once your payment is validated, a code will propagate on your screen. </p>
     </div>
-  </body>
-</html>
+
+    <div class = "box">
+      <div class="icon"> 3 </div>
+      <h3> Unlock a Bike </h3>
+      <p> Visit the nearest bike station and enter your rental code on a bike’s dashboard to unlock the bike from the dock </p>
+    </div>
+
+    <div class = "box">
+      <div class="icon"> 4 </div>
+      <h3> Enjoy Your Ride </h3>
+      <p> Upon successfully unlocking the bike, you are now free to ride it for the next two hours. Exceeding the time will incur additional costs. </p>
+    </div>
+
+    <div class = "box">
+      <div class="icon"> 5 </div>
+      <h3> Find Available Docks </h3>
+      <p> At the end of your ride, visit the locations page to view live updates on stations with available docks near you. Visit the nearest station to dock the bike. </p>
+    </div>
+
+    <div class = "box">
+      <div class="icon"> 7 </div>
+      <h3> Return the Bike </h3>
+      <p> Click Return Bike on your rental page to obtain a return token. Enter the token in the dock’s dashboard to secure the bike. Repeat the process for your next trip! </p>
+    </div>
+  </div>
+
+
+
+  <div class="lower_section">
+
+    <div> 
+    <h3>Have questions about our service?</h3>
+    <p class="lower_section_p"> Still have questions about our service? Visit our Frequently Asked Questions page</p>
+    </div>
+
+    <div>
+      <button> <%= link_to "to FAQ", faq_path %> </button>
+    </div>
+
+  </div>
+</body>
+

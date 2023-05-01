@@ -8,6 +8,7 @@ class StationsController < ApplicationController
       @stations = @all_stations.paginate(page: params[:page], per_page: 4)
     end
 
+    @station_info = [@all_stations,@stations]
 
   end
 
