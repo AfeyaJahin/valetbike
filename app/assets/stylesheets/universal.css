@@ -20,6 +20,9 @@ justify-content: space-around;
 position: relative;
 }
 
+
+
+
 .box {
 width: 400px;
 height: 200px;
@@ -46,9 +49,38 @@ margin: 10px;
 .round {
     width: 15%;
     border-radius: 15px;
-    border: 1px #FFEEE4 solid;
+    border: 2px #ACACAC solid;
     padding: 5px 5px 5px 25px;
     top: 0;
     left: 0;
     z-index: 5;
+}
+.round1 {
+    width: 100%;
+    border-radius: 15px;
+    border: 2px #ACACAC solid;
+    padding: 5px 5px 5px 25px;
+    top: 0;
+    left: 0;
+    z-index: 5;
+}
+
+.img {
+    max-width: 100%;
+    max-height:100%;
+    float: left;
+  }
+
+.nav
+{
+width: 100vw;
+height: 70px;
+position:sticky;
+padding: 0px;
+top:0;
+text-align: center;
+left:0;
+z-index: 2;
+background-color: white;
+display: inline-block;
 }
