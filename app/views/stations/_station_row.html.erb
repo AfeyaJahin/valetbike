@@ -1,6 +1,7 @@
+<script src="https://cdn.tailwindcss.com"></script>
 
-<div class="lg:flex shadow-lg" padding=8 width=50%>
-  <img class="object-cover w-full h-24 border m-2 lg:w-24" src="<%= asset_path('station.png') %>" alt="">
+<div class="lg:flex shadow-lg" padding=8 width=50%> 
+  <img class="object-cover h-24 border m-2 lg:w-24" src="<%= asset_path('station.png') %>" alt="">
   <% docked_bikes_id = String(station[:id]) + "_docked" %>
   <% docked_bikes_value = 'Available Bikes: ' + station.docked_bikes.count.to_s %>
   <div id=<%=docked_bikes_id%> value=<%=docked_bikes_value.to_json.html_safe%> class="container justify-between lg:m-6 " >

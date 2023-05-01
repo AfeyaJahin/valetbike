@@ -21,7 +21,6 @@
     <link href="/favicon.ico" rel="icon" type="image/x-icon">
     <title>ValetBike</title>
     <style>
-
    </style>
  </head>
  
@@ -37,8 +36,22 @@
 
       <div class="flexbox vertical center">
       <%= render "layouts/header" %>
+
+      <div class = "translate">
+        <p>Translate this page:</p>
+        <div id="google_translate_element"></div>
+          <script type="text/javascript">
+          function googleTranslateElementInit() {
+            new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+          }
+          </script>
+
+          <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+      </div>
+
       <%=yield %>
       <%#= render "layouts/footer" %>
+      
       </div>
     </div>
     <%= render 'shared/flash_popup' %>
