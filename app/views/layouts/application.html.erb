@@ -151,9 +151,6 @@
  </head>
  
  <body>
-    <% flash.each do |key, value| %>
-      <div class = "alert alert-<%= key %>"><%= value %></div>
-    <% end %>
 
 
 
@@ -166,6 +163,6 @@
       <%#= render "layouts/footer" %>
       </div>
     </div>
-    <%= render 'shared/flash_popup' %>
+   #<%= render 'shared/flash_popup' %>
  </body>
 </html>
